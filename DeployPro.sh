@@ -60,10 +60,10 @@ echo -e "\033[32m [INFO] -------------------------------------------------------
 sleep 3
 #Deploy application
 echo -e "\033[32m +++++++++++++++++Start backup app+++++++++++++++++ \033[0m"
-uname=root
+uname=prouser
 appBackdir=/opt/app/earPool/earBak/$(date "+%Y-%m-%d")
 appDir=/opt/app/java_apps/ldp/lib
-for i in iplist
+for i in xxx.xxx.xxx.{1..10}
 do
         echo $i
         ssh -T ${uname}@$i <<EOF
